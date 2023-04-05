@@ -12,7 +12,5 @@ public class NumeroEntre100E200 {
     if (numero <= 200 && numero >= 100 ) System.out.println("Sim o numero está entre 100 e 200 !");
     else if (numero > 200) System.out.println("Não, o numero e maior que 200 !");
     else System.out.println("Não, o numero e menor do que 100!");
-
-    /*Teste with switch case */
   }
 }
