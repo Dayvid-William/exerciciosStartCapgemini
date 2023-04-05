@@ -2,7 +2,7 @@ package Poo.Heranca;
 
 import java.util.Date;
 
-public class Motorista {
+public class Motorista extends Funcionario{
 
   public Motorista(){
     
