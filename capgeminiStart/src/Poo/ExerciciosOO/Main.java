@@ -16,5 +16,15 @@ public class Main {
     System.out.println(conta.getSaldo());
     conta.getAlterarNome("Dayvid William");
     System.out.println(conta.getNomeCorrentista());
+
+    BombaCombustivel bomba = new BombaCombustivel("Gasolina", 5.1, 5000.0f);
+    System.out.println(bomba.getTipoCombustivel() + " " +  bomba.getValorPorLitro() + " " + bomba.getQuantidadeCombustivel());
+    bomba.getAlterarValorDoLitro(6);
+    System.out.println("quantidade abastecida foi: " + bomba.getAbastecerPorValor(500) + " litros");
+    System.out.println("O valor a pagar e R$:" + bomba.getAbastecerPorLitro(5.5));
+    bomba.getAlterarCombustivel("Disel");
+    System.out.println(bomba.getTipoCombustivel());
+    bomba.getAlterarQuantidadeCombustivel(3000.8);
+    System.out.println(bomba.getQuantidadeCombustivel());
   }
 }
