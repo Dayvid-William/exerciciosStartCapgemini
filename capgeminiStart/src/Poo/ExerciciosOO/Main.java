@@ -2,12 +2,7 @@ package Poo.ExerciciosOO;
 
 public class Main {
   public static void main(String[] args) {
-    Pessoa pessoa = new Pessoa();
-
-    pessoa.setNome("Dayvid");
-    pessoa.setAltura(1.74f);
-    pessoa.setAnoDeNascimento(1998);
-
-    pessoa.calcularIdade();
+    Invoice inv = new Invoice(1, "Mousepad", 10, 50.0f);
+    System.out.println("valor total = " + inv.getInvoiceAmount());
   }
 }
