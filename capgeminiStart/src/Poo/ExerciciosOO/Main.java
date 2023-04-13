@@ -26,5 +26,37 @@ public class Main {
     System.out.println(bomba.getTipoCombustivel());
     bomba.getAlterarQuantidadeCombustivel(3000.8);
     System.out.println(bomba.getQuantidadeCombustivel());
+
+    Elevador elevador = new Elevador(0, 30, 10, 0);
+    System.out.println(elevador.getTotalDeAndares());
+    elevador.Inicializar(12, 12);
+    System.out.println(elevador.getCapacidade() + " " + elevador.getTotalDeAndares());
+
+    elevador.Inicializar(2, 3);
+    elevador.Entra();
+    elevador.Entra();
+    elevador.Entra();
+    System.out.println(elevador.getQtdPessoas());
+    
+    elevador.Sair();
+    elevador.Sair();
+    elevador.Sair();
+    System.out.println(elevador.getQtdPessoas());
+
+    elevador.Sobe();
+    elevador.Sobe();
+    elevador.Sobe();
+    elevador.Sobe();
+    System.out.println(elevador.getAndarAtual());
+
+    elevador.Desce();
+    elevador.Desce();
+    elevador.Desce();
+    elevador.Desce();
+    elevador.Desce();
+    elevador.Desce();
+    System.out.println(elevador.getAndarAtual());
+
+
   }
 }
